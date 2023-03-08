@@ -25,7 +25,7 @@ function Sobre(){
                     
                 </div>
 
-                <div id="test">
+                {/* <div id="test">
                     <form>
                         <input type="text" placeholder='Editar Texto 1'/>                                        
                         <hr />
@@ -37,7 +37,8 @@ function Sobre(){
 
                         <button type="reset">Resetar</button>
                     </form>
-                </div>                    
+                </div>                     */}
+                
             </section>                    
     )
 }
