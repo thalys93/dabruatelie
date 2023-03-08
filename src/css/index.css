@@ -1,0 +1,21 @@
+/* Configs Globais */
+body{
+    background-image: url(../assets/img/Fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    color: #545454;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 100pt;
+    margin-bottom: 50pt;
+}

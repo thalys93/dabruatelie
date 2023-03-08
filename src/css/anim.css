@@ -1,0 +1,11 @@
+.animate__animated.animate__fadeIn{
+  --animate-duration: 1.5s;
+}
+
+h3.animate__animated.animate__fadeIn{
+    --animate-duration: 2s;
+}
+
+h4.animate__animated.animate__fadeIn{
+  --animate-duration: 5s;
+}

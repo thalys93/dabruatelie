@@ -1,0 +1,100 @@
+/* Produtos */
+
+
+.container{
+    max-width: 80vw;    
+}
+.container .carousel{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;        
+}
+
+.container .carousel .item{
+    background-color: #545454;
+    border-radius: 10pt;
+    margin: 10px;
+    padding: 10px;
+    width: 270px; 
+    
+    transition: 0.5s;
+}
+
+#modalBtn{
+    border: none;
+    color: #545454;
+    background-color: aliceblue;
+    width: 100pt;
+    margin-right: 50pt;
+    margin-left: 40pt;
+    border-radius: 15pt;   
+
+    transition: 0.5s;
+}
+
+#modalBtn:hover{
+    scale: 1.1;        
+}
+
+
+
+.container .carousel .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 10pt;
+}
+
+.container .carousel .item .info{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;        
+    
+}
+
+.container .carousel .item .categoria{
+    color: rgb(183, 183, 183);
+    margin-bottom: 25pt;
+    text-decoration: overline;
+
+    transition: 0.5s;
+}
+
+.container .carousel .item .info .name{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    color: rgb(217, 217, 217);
+    margin: 10px 0; 
+    margin-bottom: 0pt;   
+}
+
+.container .carousel .item .info .sobre{
+    color: aliceblue;
+}
+
+.container .carousel .item .info .oldprice{
+    font-size: 1rem;
+    text-decoration: line-through;
+    flex-grow: 1;
+    color: rgb(255, 0, 0);    
+}
+
+.container .carousel .item .info .price{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #545454;    
+    
+    background-color: aliceblue;
+    border-radius: 10pt;
+}
+
+
+.Loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 200pt;
+}

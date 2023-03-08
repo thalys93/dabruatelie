@@ -1,0 +1,50 @@
+/* Contato */
+
+#Contato{
+   scale: 1.2; 
+}
+
+#Contato>div>a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18pt;    
+
+    text-decoration: none;
+    color: #545454;
+}
+
+i{
+    font-size: 18pt;
+}
+
+#item{
+    display: flex;    
+
+    transition: 0.5s;
+}
+
+#item:hover{
+    color: aliceblue;
+}
+
+#item>a{
+    transition: 0.5s;
+}
+
+#item>a:hover{
+    color: aliceblue;
+}
+
+#spanContato{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 13pt;
+}
+
+span>a{    
+    text-decoration: none;
+    color: #545454;
+    transition: 0.5s;
+}
+
+span>a#whatsapp:hover{
+    color: #FFFFFF;
+}
