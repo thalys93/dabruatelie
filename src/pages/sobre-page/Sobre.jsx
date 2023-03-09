@@ -1,9 +1,11 @@
 import './sobre.css'
 
+
 let perfil = "/src/assets/img/logoinvertido_branco.png"
 
 function Sobre(){
     return(        
+                            
             <section id="Sobre" className="animate__animated animate__fadeIn">
                 <div id="Pessoa">
                     <img src={perfil} id="perfil" />

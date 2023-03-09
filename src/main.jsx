@@ -12,11 +12,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 // Importando as Paginas
 import App from './App'
-import Home from "./pages/home-page/Home"
-import Contato from "./pages/contato-page/Contato"
-import Sobre from "./pages/sobre-page/Sobre"
-import Produtos from "./pages/produtos-page/Produtos"
-import ErrorPage from "./pages/layout/error-page/ErrorPage"
+import Home from './pages/home-page/Home'
+import Contato from './pages/contato-page/Contato'
+import Sobre from './pages/sobre-page/Sobre'
+import Produtos from './pages/produtos-page/Produtos'
+import ErrorPage from './pages/layout/error-page/ErrorPage'
+import Login from './pages/auth/login'
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/Contato",
     element: <Contato />
+  },
+  {
+    path: "/Login",
+    element: <Login />
   },
     ],
   }

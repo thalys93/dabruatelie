@@ -18,9 +18,11 @@ function Navbar(){
                     <ul>
                         <Link to="Produtos">Produtos</Link>
                         <div id="btnAdm">
+                            <Link to="Login">
                         <button id="adm">
                             Admin
                         </button>
+                            </Link>
                         </div>
                     </ul>
 
