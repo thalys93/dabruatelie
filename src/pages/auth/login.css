@@ -1,0 +1,40 @@
+#loginDiv{
+    background-color: #545454;
+    display: flex;
+    margin-top: 90pt;
+    margin-bottom: 50pt;
+    margin-right: 350pt;
+    margin-left: 350pt;
+    padding-bottom: 50pt;
+    padding-top: 50pt;
+                
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15pt;
+
+    color: aliceblue;
+}
+
+
+#inputDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;            
+}
+
+#subDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 15pt;
+    margin-right: 15pt;
+
+    gap: 5pt;
+
+
+}
+

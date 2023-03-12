@@ -18,7 +18,7 @@ import Sobre from './pages/sobre-page/Sobre'
 import Produtos from './pages/produtos-page/Produtos'
 import ErrorPage from './pages/layout/error-page/ErrorPage'
 import Login from './pages/auth/login'
-
+import Dashboard from "./pages/auth/admin/dashboard/dashboard"
 
 const router = createBrowserRouter([
     {
@@ -47,6 +47,10 @@ const router = createBrowserRouter([
     path: "/Login",
     element: <Login />
   },
+  {
+    path: "/auth/Dashboard",
+    element: <Dashboard />
+  }
     ],
   }
 
