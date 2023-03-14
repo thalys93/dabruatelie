@@ -1,7 +1,7 @@
+// Import dos Estilos
 import './sobre.css'
 
-
-let perfil = "/src/assets/img/logoinvertido_branco.png"
+let perfil = "/img/logoinvertido_branco.png"
 
 function Sobre(){
     return(        

@@ -1,5 +1,7 @@
-import "./navbar.css"
 import { Link } from "react-router-dom"
+
+// Import dos Estilos
+import "./navbar.css"
 
 
 function Navbar(){
@@ -18,7 +20,7 @@ function Navbar(){
                     <ul>
                         <Link to="Produtos">Produtos</Link>
                         <div id="btnAdm">
-                            <Link to="Login">
+                            <Link to="auth/Login">
                         <button id="adm">
                             Admin
                         </button>

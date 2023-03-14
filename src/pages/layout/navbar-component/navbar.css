@@ -16,7 +16,7 @@
     justify-content: start;
     align-items: center;       
     border-radius: 1000px; 
-    background-image: url(/src/assets/img/logoinvertido_branco.png);
+    background-image: url(/img/logoinvertido_branco.png);
     background-size: cover;
     width: 70pt;
     height: 70pt;
@@ -30,7 +30,7 @@
 
 #btn:hover{
 
-    background-image: url(/src/assets/img/logoinvertido_preto.png);
+    background-image: url(/img/logoinvertido_preto.png);
     background-size: cover;
 }
 

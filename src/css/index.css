@@ -1,6 +1,6 @@
 /* Configs Globais */
 body{
-    background-image: url(../assets/img/Fundo.png);
+    background-image: url(/img/Fundo.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

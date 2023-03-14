@@ -1,7 +1,7 @@
 import React from 'react'
 import "./login.css"
 
-function login() {
+function Login() {
   const localPost = "http://26.79.95.70:1337"
 
 
@@ -27,4 +27,4 @@ function login() {
   )
 }
 
-export default login
+export default Login

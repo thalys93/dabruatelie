@@ -12,12 +12,24 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 // Importando as Paginas
 import App from './App'
+
+// Página Inicial
 import Home from './pages/home-page/Home'
+
+// Contato
 import Contato from './pages/contato-page/Contato'
+
+// Sobre
 import Sobre from './pages/sobre-page/Sobre'
+
+// Produtos
 import Produtos from './pages/produtos-page/Produtos'
+
+// Página de Erro
 import ErrorPage from './pages/layout/error-page/ErrorPage'
-import Login from './pages/auth/login'
+
+// Autenticação
+import Login from './pages/auth/Login'
 import Dashboard from "./pages/auth/admin/dashboard/dashboard"
 
 const router = createBrowserRouter([
@@ -37,20 +49,28 @@ const router = createBrowserRouter([
   },
   {
     path: "/Produtos",
-    element: <Produtos />
+    element: <Produtos />,    
   },
   {
     path: "/Contato",
-    element: <Contato />
+    element: <Contato />    
   },
   {
-    path: "/Login",
-    element: <Login />
+    // Autenticação
+    path: "/",    
+    children: [
+      {
+        path: "auth/Login",
+        element: <Login />
+      },
+
+      {
+        path: "/auth/Dashboard",
+        element: <Dashboard />
+      }
+    ]    
   },
-  {
-    path: "/auth/Dashboard",
-    element: <Dashboard />
-  }
+
     ],
   }
 
