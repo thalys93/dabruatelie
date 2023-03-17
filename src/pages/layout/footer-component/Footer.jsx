@@ -2,7 +2,7 @@
 import "./footer.css"
 
 
-let dabruimg = "/src/assets/img/DabruNegativo.png"
+let dabruimg = "/img/DabruNegativo.png"
 
 function Footer(){
     return(
