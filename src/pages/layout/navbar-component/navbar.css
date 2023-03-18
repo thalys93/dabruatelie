@@ -74,7 +74,8 @@ ul>div>a{
 
 #btnAdm{
     display: flex;    
-    flex-direction: column;        
+    flex-direction: column;          
+
 }
 
 #adm{
@@ -95,6 +96,8 @@ ul>div>a{
     transition: 1s;
 }
 
+
+
 #adm:hover{
     height: 15pt;    
     color: #ffffff;
@@ -106,5 +109,14 @@ ul>a:hover{
     color: #999999;
 }
 
+.sairSessao{
+    border: none;
+    transition: 0.5s;
+}
 
+.sairSessao:hover{
+    scale: 1.1;
+
+    background-color: antiquewhite;
+}
 

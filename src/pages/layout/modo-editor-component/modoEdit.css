@@ -1,0 +1,8 @@
+.ModoDeEdição{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 35%;    
+    
+    scale: 0.6;
+}

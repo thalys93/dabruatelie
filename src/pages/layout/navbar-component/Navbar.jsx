@@ -9,8 +9,9 @@ function Navbar(){
     <nav >
         <div id = "barra">
             <Link to= "/">
-        <button id = "btn" ></button>
+                <button id = "btn" />                                        
             </Link>        
+                
             <div id="lista">
                 <list>
                     <ul>
@@ -19,18 +20,22 @@ function Navbar(){
 
                     <ul>
                         <Link to="Produtos">Produtos</Link>
-                        <div id="btnAdm">
-                            <Link to="auth/Login">
-                        <button id="adm">
-                            Admin
-                        </button>
-                            </Link>
-                        </div>
+                            <div id="btnAdm">
+                                <Link to="Login">
+                                    <button id="adm">
+                                        Admin
+                                    </button>  
+                                </Link>        
+                            </div>
                     </ul>
 
                     <ul>
                         <Link to="Contato">Contato</Link>
                     </ul>                
+
+                    <ul>
+                        <button className="sairSessao" > Deslogar </button>
+                    </ul>
                 </list>
             </div> 
         </div>       
