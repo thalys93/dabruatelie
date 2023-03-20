@@ -11,13 +11,15 @@
     flex-direction: column;
     scale: 0.8;
 
-    margin-bottom: 5pt;
+    margin-bottom: -25pt;
 
 }
 
 #spanSobre{
     font-family: 'Bebas Neue', cursive;
-    font-size: 18pt;
+    margin-top: 5pt;  
+    margin-bottom: 10pt;  
+    font-size: 20pt;
 }
 
 #Fundo{
@@ -43,3 +45,53 @@ div>p{
     font-size: 15pt;
     margin-bottom: 4pt;
 }
+
+/* Botões de Edição */
+
+.editDiv{
+    display: flex;
+    margin-right: 250pt;    
+
+    transform: translateY(10pt);
+    
+    transition:0.5s;
+}
+
+.editDiv1{
+    display: flex;
+    margin-right: 150pt;  
+
+    transform: translateY(35pt);
+    
+    transition:0.5s;
+}
+
+.editDiv1 .editBtn{
+    transition:0.5s;
+
+    border: none;
+    border-radius: 50pt 50pt 0pt 50pt;
+}
+
+.editDiv1 .editBtn:hover{
+    scale: 1.1;
+
+    background-color: beige;
+}
+
+
+
+.editDiv .editBtn{
+    transition:0.5s;
+
+    border: none;
+    border-radius: 50pt 50pt 0pt 50pt;
+}
+
+.editDiv .editBtn:hover{
+    scale: 1.1;
+
+    background-color: beige;
+}
+
+

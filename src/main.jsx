@@ -29,8 +29,7 @@ import Produtos from './pages/produtos-page/Produtos'
 import ErrorPage from './pages/layout/error-page/ErrorPage'
 
 // Autenticação
-import Login from './pages/auth/Login'
-import Dashboard from "./pages/auth/admin/dashboard/dashboard"
+import Login from './pages/login-component/login'
 
 const router = createBrowserRouter([
     {
@@ -57,18 +56,9 @@ const router = createBrowserRouter([
   },
   {
     // Autenticação
-    path: "/",    
-    children: [
-      {
-        path: "auth/Login",
-        element: <Login />
-      },
-
-      {
-        path: "/auth/Dashboard",
-        element: <Dashboard />
-      }
-    ]    
+    path: "/Login", 
+    element: <Login />   
+     
   },
 
     ],

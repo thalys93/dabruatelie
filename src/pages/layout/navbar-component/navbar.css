@@ -74,7 +74,8 @@ ul>div>a{
 
 #btnAdm{
     display: flex;    
-    flex-direction: column;        
+    flex-direction: column;          
+
 }
 
 #adm{
@@ -95,6 +96,8 @@ ul>div>a{
     transition: 1s;
 }
 
+
+
 #adm:hover{
     height: 15pt;    
     color: #ffffff;
@@ -106,5 +109,57 @@ ul>a:hover{
     color: #999999;
 }
 
+.sairSessao{
+    border: none;
+    transition: 0.5s;
+}
+
+.sairSessao:hover{
+    scale: 1.1;    
+
+    background-color: antiquewhite;
+}
+
+.listaInfo ul{    
+    margin-top: 5pt;
+    margin-bottom: 5pt;    
+    
+    padding-right: 7pt;
+    padding-left: 7pt;
+    
+}
+
+
+#divBtn1{
+display: none;       
+transition: 1s;
+}
+
+#divBtn2{    
+display: none;       
+transition: 1s;
+}
+
+
+.listaInfo{
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+    background-color: #676767;
+    height: 4pt;
+    width: 55pt;
+    
+    border: none;
+
+    border-radius: 0pt 0pt 5pt 5pt;
+
+    margin-top: 3pt;
+    transition: 0.5s;
+}
+
+/* Anim */
+.listaInfoMostrar{
+    height: 60pt;
+}
 
 
