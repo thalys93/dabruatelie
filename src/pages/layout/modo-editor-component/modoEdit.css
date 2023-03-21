@@ -4,5 +4,10 @@
     justify-content: center;
     opacity: 35%;    
     
-    scale: 0.6;
+    font-family: 'Bebas Neue', cursive;
+    
+    user-select: none;
+    font-size: 50pt;
+        
+    scale: 0.5;    
 }

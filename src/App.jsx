@@ -1,16 +1,18 @@
 import Footer from "./pages/layout/footer-component/Footer"
 import Navbar from "./pages/layout/navbar-component/Navbar"
+import { useState } from "react";
 
 import { Outlet } from "react-router-dom"
-import ModoEditor from "./pages/layout/modo-editor-component/ModoEditor"
 
 
-function App(){
-  return (    
+
+function App(){  
+
+
+  return (      
     <main>            
-      <Navbar />
-      <ModoEditor />      
-        <Outlet />    
+      <Navbar/>           
+        <Outlet/>    
       <Footer />
     </main>
   )

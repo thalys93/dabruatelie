@@ -1,11 +1,15 @@
 /* Inicio */
-h3{
+#dabru{
+    user-select: none;
+    
     font-family: 'Bebas Neue', cursive;
     font-size: 40pt;
 }
 
-h4{
+
+#tabx{
     margin-bottom: 20pt;
+    user-select: none;
 
     font-family: 'Blinker', sans-serif;
     font-size: 16pt;
@@ -15,6 +19,8 @@ h4{
 #deco{
     font-size: 20pt;
     transform: scaleX(10);
+
+    user-select: none;
 }
 
 /* btns do inicio */
