@@ -1,10 +1,55 @@
+import {useState} from "react";
 import { Link } from "react-router-dom"
+
+import ModoEditor from "../modo-editor-component/ModoEditor"
+import EditButton from "./EditButton";
 
 // Import dos Estilos
 import "./navbar.css"
 
 
-function Navbar(){
+function Navbar() {
+
+// Funções de Mostrar Barras De Navegação (ADMIN)
+    function mostrarBarra (){                     
+        // Formata o Tamanho da Div
+        const div = document.getElementById("DivButton");
+        div.style.height = "95pt"
+        div.style.width = "75pt"
+        
+        // Altera Opacidade Dos Botões
+        const btn1 = document.getElementById('divBtn1')              
+        const btn2 = document.getElementById('divBtn2')  
+        const btn3 = document.getElementById('divBtn3')
+
+        btn1.style.display = "flex"
+        btn2.style.display = "flex"
+        btn3.style.display = "flex"
+    };
+
+    function fecharBarra (){        
+        // Formata o Tamanho da Div
+        const div = document.getElementById("DivButton");
+        div.style.height = "5pt"
+        div.style.width = "55pt"
+        
+        // Altera Opacidade e Tempo Dos Botões
+        const btn1 = document.getElementById('divBtn1')      
+        const btn2 = document.getElementById('divBtn2')                      
+        const btn3 = document.getElementById('divBtn3')
+
+        btn1.style.display = "none"
+        btn2.style.display = "none"
+        btn3.style.display = "none"
+  
+    };
+
+   // Função para Ativar e Desativar A Edição (ADMIN)
+    const [showEdit, setShowEdit] = useState(false);
+
+    function ativarEdição (){
+        setShowEdit(current => !current)
+    }
     return(
     <nav >
         <div id = "barra">
@@ -22,7 +67,7 @@ function Navbar(){
                         <Link to="Produtos">Produtos</Link>
                             <div id="btnAdm">
                                 <Link to="Login">
-                                    <button id="adm">
+                                    <button id="adm" hidden>
                                         Admin
                                     </button>  
                                 </Link>        
@@ -32,13 +77,25 @@ function Navbar(){
                     <ul>
                         <Link to="Contato">Contato</Link>
                     </ul>                
+                </list>
+                <list>
+                        <div className="listaInfo" id="DivButton" onClickCapture={mostrarBarra}>
+                    <ul>
+                        <EditButton onClickCapture={ativarEdição} /> 
+                    </ul>
 
                     <ul>
-                        <button className="sairSessao" > Deslogar </button>
+                        <button className="sairSessao" id="divBtn2"> Deslogar </button>
                     </ul>
+                    <ul>
+                        <button className="botaoSair" id="divBtn3" onClickCapture={fecharBarra} > - </button>
+                    </ul>
+                        </div>
                 </list>
-            </div> 
-        </div>       
+            </div>             
+        </div>               
+        {showEdit && <ModoEditor/> }
+        
     </nav>
     )
 }

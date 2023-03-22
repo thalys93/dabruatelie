@@ -1,17 +1,17 @@
+import EditBtn from './EditBtn'
+
 // Import dos Estilos
 import './sobre.css'
 
 let perfil = "/img/logoinvertido_branco.png"
 
-function Sobre(){
+function Sobre(props){
     return(        
                             
             <section id="Sobre" className="animate__animated animate__fadeIn">
                                 
-                    <div className='editDiv1' hidden>
-                        <button className='editBtn'>
-                            <i className='bi bi-pencil-square'/>
-                        </button>
+                    <div className='editDiv1'>
+                       {props && <EditBtn/>}
                     </div>
 
                 <div id="Pessoa">
@@ -19,10 +19,8 @@ function Sobre(){
                     <span id="spanSobre"> Bruna Dutra </span>
                 </div>
 
-                    <div className='editDiv' hidden>
-                        <button className='editBtn'>
-                            <i className='bi bi-pencil-square'/>
-                        </button>
+                    <div className='editDiv'>
+                        {props && <EditBtn/>}
                     </div>
 
                 <div id="Fundo">
@@ -34,10 +32,8 @@ function Sobre(){
                     </p>
                 </div>
 
-                    <div className='editDiv' hidden>
-                        <button className='editBtn'>
-                            <i className='bi bi-pencil-square'/> 
-                        </button>
+                    <div className='editDiv'>
+                        {props && <EditBtn/>}
                     </div>
 
                 <div id="Fundo">

@@ -111,12 +111,64 @@ ul>a:hover{
 
 .sairSessao{
     border: none;
+    font-family: 'Blinker', sans-serif;
+    
     transition: 0.5s;
 }
 
-.sairSessao:hover{
-    scale: 1.1;
+.botaoSair{        
+border: none;
+font-family: 'Blinker', sans-serif;
+background-color: #676767;
+color: #ffffff;
+transform: scaleX(3.5);
 
-    background-color: antiquewhite;
+transition: 0.5s;
 }
+
+.sairSessao:hover{
+    scale: 1.1;        
+    background-color: rgb(245, 222, 192);
+}
+
+.listaInfo ul{    
+    margin-top: 5pt;
+    margin-bottom: 5pt;    
+    
+    padding-right: 7pt;
+    padding-left: 7pt;
+    
+}
+
+#divBtn1{   
+display: none; 
+
+}
+
+#divBtn2{        
+display: none;
+}
+
+#divBtn3{
+    display: none;
+}
+
+
+
+.listaInfo{
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+    background-color: #676767;
+    height: 7pt;
+    width: 55pt;
+    
+    border: none;
+
+    border-radius: 0pt 0pt 5pt 5pt;
+
+    margin-top: 2pt;
+    transition: 1.2s;
+}
+
 
