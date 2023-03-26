@@ -1,8 +1,11 @@
-import {useState} from "react";
+// Link do React Router
 import { Link } from "react-router-dom"
 
+// Link do UseState
+import { useState } from "react";
+
+// Modo Editor
 import ModoEditor from "../modo-editor-component/ModoEditor"
-import EditButton from "./EditButton";
 
 // Import dos Estilos
 import "./navbar.css"
@@ -10,7 +13,7 @@ import "./navbar.css"
 
 function Navbar() {
 
-// Funções de Mostrar Barras De Navegação (ADMIN)
+// Funções de Mostrar Barras De Navegação Após autenticação
     function mostrarBarra (){                     
         // Formata o Tamanho da Div
         const div = document.getElementById("DivButton");
@@ -25,7 +28,7 @@ function Navbar() {
         btn1.style.display = "flex"
         btn2.style.display = "flex"
         btn3.style.display = "flex"
-    };
+    };    
 
     function fecharBarra (){        
         // Formata o Tamanho da Div
@@ -44,12 +47,23 @@ function Navbar() {
   
     };
 
-   // Função para Ativar e Desativar A Edição (ADMIN)
-    const [showEdit, setShowEdit] = useState(false);
+// Funções de Mostrar Barra de Login (antes da autenticação)
 
+    function mostrarBarra2 () {
+
+    }
+
+    function fecharBarra2 () {
+        
+    }
+
+   // Função para Ativar e Desativar A Edição (ADMIN) 
+   const [showEdit, setShowEdit] = useState(false);
+   
     function ativarEdição (){
         setShowEdit(current => !current)
-    }
+    };
+
     return(
     <nav >
         <div id = "barra">
@@ -67,8 +81,8 @@ function Navbar() {
                         <Link to="Produtos">Produtos</Link>
                             <div id="btnAdm">
                                 <Link to="Login">
-                                    <button id="adm" hidden>
-                                        Admin
+                                    <button id="adm" onClickCapture={mostrarBarra2}>
+                                        Login
                                     </button>  
                                 </Link>        
                             </div>
@@ -79,9 +93,9 @@ function Navbar() {
                     </ul>                
                 </list>
                 <list>
-                        <div className="listaInfo" id="DivButton" onClickCapture={mostrarBarra}>
+                        <div className="listaInfo" id="DivButton" onClickCapture={mostrarBarra} hidden>
                     <ul>
-                        <EditButton onClickCapture={ativarEdição} /> 
+                        <button className="sairSessao" id="divBtn1" onClick={ativarEdição}> Edição </button>
                     </ul>
 
                     <ul>

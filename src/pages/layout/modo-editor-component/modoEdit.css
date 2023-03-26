@@ -1,8 +1,8 @@
-.ModoDeEdição{
+#ModoDeEdição{
     display: flex;
     align-items: center;
-    justify-content: center;
-    opacity: 35%;    
+    justify-content: center;   
+    color: #5454544f;        
     
     font-family: 'Bebas Neue', cursive;
     
@@ -10,4 +10,6 @@
     font-size: 50pt;
         
     scale: 0.5;    
+    margin-bottom: -45pt;
+    padding-bottom: -15pt;
 }

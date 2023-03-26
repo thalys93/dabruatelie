@@ -2,6 +2,7 @@
 
 #Sobre{
     margin-top: 20pt;
+    transition: 0.5s;
 }
 
 #Pessoa{
@@ -10,8 +11,9 @@
     align-items: center;
     flex-direction: column;
     scale: 0.8;
-
+    
     margin-bottom: -25pt;
+    transition: 0.5s;
 
 }
 
