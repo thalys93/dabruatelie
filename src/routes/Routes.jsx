@@ -5,16 +5,16 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 // Importando as Paginas
 import App from '../App'
-import Home from '../pages/home-page/Home'
-import Contato from '../pages/contato-page/Contato'
-import Sobre from '../pages/sobre-page/Sobre'
-import Produtos from '../pages/produtos-page/Produtos'
+import Home from '../pages/home/Home'
+import Contato from '../pages/contato/Contato'
+import Sobre from '../pages/sobre/Sobre'
+import Produtos from '../pages/produtos/Produtos'
 
 // Login e Dashboard
-import Login from "../pages/auth/login-component/login"
+import Login from "../pages/auth/login/login"
 import Dashboard from '../pages/auth/dashboard/dashboard'
 
-import ErrorPage from '../pages/layout/error-page/ErrorPage'
+import ErrorPage from '../pages/error-page/ErrorPage'
 // Rotas do React Router
 const router = createBrowserRouter([
     // Rotas Gerais

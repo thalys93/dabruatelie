@@ -26,7 +26,7 @@ function Login() {
 
     <div className='Exit-Div'>
     <Link to= "/">
-      <button data-tooltip-content='Retornar?' data-tooltip-place='right' data-tooltip-id='exit-Tooltip' className='Exit-Button'>
+      <button data-tooltip-content='Deseja Retornar?' data-tooltip-place='right' data-tooltip-id='exit-Tooltip' className='Exit-Button'>
         <i class="bi bi-box-arrow-left" a/>
       </button>        
     </Link>

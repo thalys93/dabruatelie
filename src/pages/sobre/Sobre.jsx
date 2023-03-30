@@ -1,4 +1,4 @@
-import EditBtn from './EditBtn'
+import React from 'react'
 
 // Import dos Estilos
 import './sobre.css'
@@ -8,9 +8,9 @@ let perfil = "/img/logoinvertido_branco.png"
 function Sobre(){
     return(                                   
             <section id="Sobre" className="animate__animated animate__fadeIn">
-                                
+
                     <div className='editDiv1'>
-                       {/* {setShowEdit && <EditBtn/>} */}
+                       
                     </div>
 
                 <div id="Pessoa">
@@ -19,7 +19,7 @@ function Sobre(){
                 </div>
 
                     <div className='editDiv'>
-                        {/* {setShowEdit && <EditBtn/>} */}
+                        
                     </div>
 
                 <div id="Fundo">
@@ -32,7 +32,7 @@ function Sobre(){
                 </div>
 
                     <div className='editDiv'>
-                        {/* {setShowEdit && <EditBtn/>} */}
+                        
                     </div>
 
                 <div id="Fundo">

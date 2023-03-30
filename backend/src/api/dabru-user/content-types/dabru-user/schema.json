@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dabru_users",
+  "info": {
+    "singularName": "dabru-user",
+    "pluralName": "dabru-users",
+    "displayName": "Dabru-user"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "User": {
+      "type": "string",
+      "required": true
+    },
+    "Password": {
+      "type": "password",
+      "required": true
+    }
+  }
+}

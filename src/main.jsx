@@ -1,6 +1,7 @@
 // Imports Do React
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
 // Imports do React Tooltip
 import 'react-tooltip/dist/react-tooltip.css'
 
@@ -11,6 +12,7 @@ import Routes from './routes/Routes'
 import './css/global.css'
 import './css/fonts.css'
 import './css/anim.css'
+import './css/respons.css'
 
 
 
