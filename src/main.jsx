@@ -8,9 +8,9 @@ import 'react-tooltip/dist/react-tooltip.css'
 import Routes from './routes/Routes'
 
 // Import de CSS Global
-import './global/index.css'
-import './global/fonts.css'
-import './global/anim.css'
+import './css/global.css'
+import './css/fonts.css'
+import './css/anim.css'
 
 
 

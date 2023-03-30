@@ -1,12 +1,12 @@
 import React from 'react'
-import ProdEdit from './ProdEdit'
+// import ProdEdit from './ProdEdit'
 
 
 
 function Dashboard() {
   return (
     <div>
-      <ProdEdit />
+      {/* <ProdEdit /> */}
     </div>
   )
 }
