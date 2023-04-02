@@ -2,74 +2,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+// Imports do React Tooltip
+import 'react-tooltip/dist/react-tooltip.css'
+
+// Import das Rotas
+import Routes from './routes/Routes'
+
 // Import de CSS Global
-import './css/index.css'
+import './css/global.css'
 import './css/fonts.css'
 import './css/anim.css'
-
-// Configurando Router
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-// Importando as Paginas
-import App from './App'
-
-// Página Inicial
-import Home from './pages/home-page/Home'
-
-// Contato
-import Contato from './pages/contato-page/Contato'
-
-// Sobre
-import Sobre from './pages/sobre-page/Sobre'
-
-// Produtos
-import Produtos from './pages/produtos-page/Produtos'
-
-// Página de Erro
-import ErrorPage from './pages/layout/error-page/ErrorPage'
-
-// Autenticação
-import Login from './pages/login-component/login'
-
-const router = createBrowserRouter([
-    {
-    path: "/",
-    element: <App />,
-    // Págin de Error
-    errorElement: <ErrorPage />,
-    children: [
-  {
-    path: "/",
-    element: <Home />
-  },
-  {
-    path: "/Sobre",
-    element: <Sobre />
-  },
-  {
-    path: "/Produtos",
-    element: <Produtos />,    
-  },
-  {
-    path: "/Contato",
-    element: <Contato />    
-  },
-  {
-    // Autenticação
-    path: "/Login", 
-    element: <Login />   
-     
-  },
-
-    ],
-  }
-
-])
+import './css/respons.css'
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router}/>    
+  <React.StrictMode>    
+    <Routes />    
   </React.StrictMode>,
 )

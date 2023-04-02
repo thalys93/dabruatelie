@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+
 import Produto from "./Produto";
 
 
@@ -10,6 +11,8 @@ function Produtos(){
 
     // Buscar na Api Informações
     const [data, setData] = useState([]);
+    const [progress, setProgress] = useState(0)
+    
     const local = "http://26.79.95.70:1337"
 
     useEffect(() => {                            
@@ -20,7 +23,7 @@ function Produtos(){
 
 
     return(
-    <section id="Produtos">
+    <section id="Produtos">        
             <div className='container'>
                 <div className='carousel'>                 
             {data.data?.map((item, id ) => {      

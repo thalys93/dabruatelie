@@ -1,3 +1,8 @@
+*{
+    transition: 0.5s;
+}
+
+
 /* Configs Globais */
 body{
     background-image: url(/img/Fundo.png);

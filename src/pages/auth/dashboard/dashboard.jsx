@@ -1,12 +1,12 @@
 import React from 'react'
+// import ProdEdit from './ProdEdit'
 
 
 
 function Dashboard() {
   return (
     <div>
-      <h1> Testando o Dashboard</h1>      
-         <h2> Usando Informações para definir alguma coisa </h2>
+      {/* <ProdEdit /> */}
     </div>
   )
 }

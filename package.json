@@ -14,12 +14,12 @@
     "bootstrap": "^5.2.3",
     "qs": "^6.11.0",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.8.1",
-    "react-toastify": "^9.1.1"
+    "react-toastify": "^9.1.1",
+    "react-tooltip": "^5.10.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

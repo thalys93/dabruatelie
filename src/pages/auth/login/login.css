@@ -6,8 +6,12 @@
     margin-bottom: 50pt;
     margin-right: 350pt;
     margin-left: 350pt;
+
     padding-bottom: 50pt;
     padding-top: 50pt;
+
+    padding-left: 25pt;
+    padding-right: 25pt;
                 
 
     flex-direction: column;
@@ -94,4 +98,29 @@
 
 .endDiv span b{
     color: red;
+}
+
+.Exit-Button{
+    border: none;
+    background-color: #676767;    
+    color: aliceblue;
+    border-radius: 5pt;
+
+    transition: 0.5s;
+}
+
+.Tooltip{
+    transition: 1s;
+}
+
+.Exit-Button:hover{
+    background-color: aliceblue;    
+    color: #676767;
+}
+
+.Exit-Div{
+    display: flex;
+    
+    margin-right: 185vh;
+    margin-top: -15vh;
 }

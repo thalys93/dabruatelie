@@ -1,0 +1,144 @@
+/* Desktop FullHd */
+@media (max-width: 2000px){
+    body{
+    transition: 0.5s;
+    background-size: 150rem;
+    }
+
+    #barraHam{
+        display: none;
+    }
+}
+
+
+/* Desktops Widescreen */
+@media (max-width: 1200px){
+    body{
+    transition: 0.5s;
+    background-size: 90rem;
+    }
+
+        #barraHam{
+        display: none;
+    }
+}
+
+/* Tablets Paisagem */
+@media (max-width: 960px){
+    body{
+    transition: 0.5s; 
+    background-size: 80rem;   
+    }
+
+    #barraHam{
+        display: none;
+    }
+}
+
+/* Tablets Retrato */
+@media (max-width: 768px){
+    body{
+    transition: 0.5s;
+    background-size: 70rem;
+    }
+
+    #barraHam{
+        display: none;
+    }
+}
+
+/* Smartphones Paisagem */
+@media (max-width: 480px){
+    body{
+    transition: 0.5s;
+    background-size: 100rem
+    }
+
+    /* Navbar */
+    #barraHam{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    #lista{
+        display: none;
+    }
+
+    #barra{
+        display: none;
+        border-radius: 0pt
+    }
+
+    #logoDesk{        
+        display: none;
+    }
+
+    
+    .listaHamburguer{        
+        display: flex;        
+        justify-content: space-between;        
+    }
+
+    #hamIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35pt;        
+        
+        margin-top: 5pt;        
+        margin-left: 15pt;
+        
+        transition: 0.5s ease-in-out;
+    }
+
+    #hamIconAbv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25pt; 
+        
+
+        scale: 1.1;
+        color: aliceblue;
+
+        transition: 0.5s ease-in-out;
+    }
+
+    .btnHam{
+        border: none;
+        background-color: transparent;
+        
+    }
+
+    .btnHamAbv{
+        background: #545454;
+        height: 49pt;
+        width: 92pt;                
+        color: aliceblue;    
+        border: none;
+    }
+     
+
+    .Hamburguer-Show{
+        background: #545454;        
+        padding-right: 10pt;       
+        border-radius: 0pt 0pt 30pt 0pt;    
+
+        display: flex;
+        justify-content: center;        
+        flex-direction: column;  
+        transition: 0.5s;
+    }
+  
+}
+
+/* Smartphones Retrato */
+@media (max-width: 320px){
+    body{
+    transition: 0.5s;
+    background-size: 80rem;
+    }
+}
+

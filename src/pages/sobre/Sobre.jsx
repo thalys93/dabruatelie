@@ -1,17 +1,16 @@
-import EditBtn from './EditBtn'
+import React from 'react'
 
 // Import dos Estilos
 import './sobre.css'
 
 let perfil = "/img/logoinvertido_branco.png"
 
-function Sobre(props){
-    return(        
-                            
+function Sobre(){
+    return(                                   
             <section id="Sobre" className="animate__animated animate__fadeIn">
-                                
+
                     <div className='editDiv1'>
-                       {props && <EditBtn/>}
+                       
                     </div>
 
                 <div id="Pessoa">
@@ -20,7 +19,7 @@ function Sobre(props){
                 </div>
 
                     <div className='editDiv'>
-                        {props && <EditBtn/>}
+                        
                     </div>
 
                 <div id="Fundo">
@@ -33,7 +32,7 @@ function Sobre(props){
                 </div>
 
                     <div className='editDiv'>
-                        {props && <EditBtn/>}
+                        
                     </div>
 
                 <div id="Fundo">

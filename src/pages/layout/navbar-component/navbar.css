@@ -1,20 +1,16 @@
 
-
-
-
 #barra{    
     background: #545454;
     border-radius: 0pt 0pt 50pt 0pt;
     height: 50pt;
-    display: flex;  
+    display: flex;
     justify-content: space-between;    
     flex-direction: row;
+
+    transition: 0.5s;
 }
 
 #btn{
-    display: flex;    
-    justify-content: start;
-    align-items: center;       
     border-radius: 1000px; 
     background-image: url(/img/logoinvertido_branco.png);
     background-size: cover;
@@ -29,7 +25,6 @@
 }
 
 #btn:hover{
-
     background-image: url(/img/logoinvertido_preto.png);
     background-size: cover;
 }
@@ -72,36 +67,52 @@ ul>div>a{
     font-size: 20px;
 }
 
-#btnAdm{
-    display: flex;    
-    flex-direction: column;          
-
-}
 
 #adm{
     font-family: 'Blinker', sans-serif;
     font-size: 10pt;
     width: 50pt;
-
     position: absolute;
     height: 5pt;    
     color: #ffffff00;
     background-color: #676767;
     top: 50pt;
     right: 128pt;
-    border: none;
-    
+    border: none;    
     border-radius: 0pt 0pt 50pt 50pt;
-
     transition: 1s;
+}
+
+#LinkToLogin{
+    display: none;
+    
+}
+
+#linkToLoginOpen{
+    display: inline;
+    color: #ffffff;    
+    text-decoration: none;
+
+    transition: 0.5s;
 }
 
 
 
-#adm:hover{
+#admOpen{
+    font-family: 'Blinker', sans-serif;
+    font-size: 10pt;
+    width: 50pt;
+    position: absolute;
     height: 15pt;    
     color: #ffffff;
-    }
+    background-color: #676767;
+    top: 50pt;
+    right: 128pt;
+    border: none;    
+    border-radius: 0pt 0pt 50pt 50pt;
+    transition: 1s;    
+}
+
 
 
 
@@ -169,6 +180,25 @@ display: none;
 
     margin-top: 2pt;
     transition: 1.2s;
+}
+
+
+#listaHamburguer{    
+    display: none; 
+    
+}
+
+
+.Hamburguer{
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;    
 }
 
 
